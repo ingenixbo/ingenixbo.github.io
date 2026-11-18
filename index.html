@@ -602,6 +602,11 @@
       </div>
     </div>
   </footer>
+<script>
+  if (window.location.search.includes('utm_source')) {
+    window.history.replaceState({}, document.title, window.location.pathname);
+  }
+</script>
 
 </body>
 </html>
